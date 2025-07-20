@@ -60,12 +60,12 @@ const PaymentSuccess = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-          <div className="flex items-center gap-2 text-green-600">
-            <span className="w-2 h-2 rounded-full bg-green-500"></span>
-            <p className="text-sm">Ready to ship</p>
+          <div className="flex items-center gap-2 text-red-600">
+            <span className="w-2 h-2 rounded-full bg-red-600"></span>
+            <p className="text-sm">failed</p>
           </div>
-          <button className="border border-gray-400 px-4 py-1 rounded text-sm hover:bg-gray-100">
-            Track Order
+          <button className="border border-gray-400 px-4 py-1 rounded text-sm hover:bg-gray-100" onClick={() => navigate('/fail')}>
+            Details
           </button>
         </div>
       </div>
